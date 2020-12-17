@@ -4,7 +4,6 @@ import Card from './Card'
 export default function Content() {
 
     
-ensayando en rama master
     return (
         <div className="content-wrapper">
             
