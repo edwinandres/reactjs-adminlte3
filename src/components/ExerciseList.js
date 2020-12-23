@@ -1,7 +1,23 @@
 import React from "react";
 import Card from './Card'
 
-function ExerciseList(props) {
+
+const ExerciseList = ({exercises}) => (
+    <div>
+        {exercises.map((exercise) => (            
+            <Card
+                key={exercise.id}
+                title={exercise.title}
+                description={exercise.description}
+                img={exercise.img}
+                leftColor={exercise.leftColor}
+                rightColor={exercise.rightColor}
+            />           
+        ))}
+    </div>
+)
+
+/* function ExerciseList(props) {
   return (
     <div>
       {props.exercises.map((exercise) => {
@@ -17,6 +33,6 @@ function ExerciseList(props) {
       })}
     </div>
   );
-}
+} */
 
 export default ExerciseList;
