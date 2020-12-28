@@ -7,11 +7,14 @@ const ExerciseList = ({exercises}) => (
         {exercises.map((exercise) => (            
             <Card
                 key={exercise.id}
+                {...exercise}
+                /*
                 title={exercise.title}
                 description={exercise.description}
                 img={exercise.img}
                 leftColor={exercise.leftColor}
                 rightColor={exercise.rightColor}
+                */
             />           
         ))}
     </div>

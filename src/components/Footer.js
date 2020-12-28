@@ -8,7 +8,7 @@ export default function Footer() {
         <footer className="">
             <div className="Footer">
                 <div className="w33">
-                    <img src={logo_siata} ></img>
+                    <img src={logo_siata} alt="Logo Siata"></img>
                 </div>
                 <div className="w33">
                     <img src={logo_siata} ></img>
